@@ -21,13 +21,13 @@
 使用 [Vercel Labs Skills CLI](https://github.com/vercel-labs/skills) 一键安装：
 
 ```bash
-npx skills add JackChen-me/silevy-skills --skill silevy-weekly-review
+npx skills add YuanASI/silevy-skills --skill silevy-weekly-review
 ```
 
 ### 方式二：手动安装
 
 ```bash
-git clone https://github.com/JackChen-me/silevy-skills.git
+git clone https://github.com/YuanASI/silevy-skills.git
 ln -s "$(pwd)/silevy-skills/skills/silevy-weekly-review" ~/.claude/skills/silevy-weekly-review
 ```
 
