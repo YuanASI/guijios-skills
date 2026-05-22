@@ -18,20 +18,20 @@
 ### 安装整个 monorepo
 
 ```bash
-npx skills add JackChen-me/silevy-skills
+npx skills add YuanASI/silevy-skills
 ```
 
 ### 只装某一个 skill
 
 ```bash
-npx skills add JackChen-me/silevy-skills --skill silevy-reply
-npx skills add JackChen-me/silevy-skills --skill silevy-weekly-review
+npx skills add YuanASI/silevy-skills --skill silevy-reply
+npx skills add YuanASI/silevy-skills --skill silevy-weekly-review
 ```
 
 ### 手动安装
 
 ```bash
-git clone https://github.com/JackChen-me/silevy-skills.git
+git clone https://github.com/YuanASI/silevy-skills.git
 ln -s "$(pwd)/silevy-skills/skills/silevy-reply" ~/.claude/skills/silevy-reply
 ln -s "$(pwd)/silevy-skills/skills/silevy-weekly-review" ~/.claude/skills/silevy-weekly-review
 ```

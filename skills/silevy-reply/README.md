@@ -47,7 +47,7 @@ The skill maintains a detailed blocklist of phrases and patterns that scream "AI
 Works with Claude Code, Codex, Cursor, GitHub Copilot, OpenCode, and other agents supported by [Vercel's skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add JackChen-me/silevy-skills --skill silevy-reply
+npx skills add YuanASI/silevy-skills --skill silevy-reply
 ```
 
 ### Option 2: Manual install
@@ -56,7 +56,7 @@ Two language versions: `SKILL.md` (English, default) and `SKILL-zh.md` (Chinese 
 
 ```bash
 # English version (default)
-git clone https://github.com/JackChen-me/silevy-skills.git
+git clone https://github.com/YuanASI/silevy-skills.git
 ln -s "$(pwd)/silevy-skills/skills/silevy-reply" ~/.claude/skills/silevy-reply
 
 # Chinese version — swap SKILL.md to point at the zh file
