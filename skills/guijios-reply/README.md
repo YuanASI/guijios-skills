@@ -1,8 +1,10 @@
-> Part of **[silevy-skills](../../README.md)** — Claude Code skills by Silevy. [Back to index ↑](../../README.md)
+> Part of **[guijios-skills](../../README.md)** — Claude Code skills by GuijiOS. [Back to index ↑](../../README.md)
 
-# silevy-reply
+# GuijiOS Reply
 
 A Claude Code skill for drafting cross-platform replies and comments. Auto-routes to platform-specific rules for GitHub, Reddit, Twitter/X, Hacker News, and more.
+
+Previously published as `silevy-reply`. The only actively maintained skill ID is now `guijios-reply`.
 
 ## What it does
 
@@ -47,7 +49,7 @@ The skill maintains a detailed blocklist of phrases and patterns that scream "AI
 Works with Claude Code, Codex, Cursor, GitHub Copilot, OpenCode, and other agents supported by [Vercel's skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add YuanASI/silevy-skills --skill silevy-reply
+npx skills add YuanASI/guijios-skills --skill guijios-reply
 ```
 
 ### Option 2: Manual install
@@ -56,31 +58,31 @@ Two language versions: `SKILL.md` (English, default) and `SKILL-zh.md` (Chinese 
 
 ```bash
 # English version (default)
-git clone https://github.com/YuanASI/silevy-skills.git
-ln -s "$(pwd)/silevy-skills/skills/silevy-reply" ~/.claude/skills/silevy-reply
+git clone https://github.com/YuanASI/guijios-skills.git
+ln -s "$(pwd)/guijios-skills/skills/guijios-reply" ~/.claude/skills/guijios-reply
 
 # Chinese version — swap SKILL.md to point at the zh file
-cp "$(pwd)/silevy-skills/skills/silevy-reply/SKILL-zh.md" \
-   ~/.claude/skills/silevy-reply/SKILL.md
+cp "$(pwd)/guijios-skills/skills/guijios-reply/SKILL-zh.md" \
+   ~/.claude/skills/guijios-reply/SKILL.md
 ```
 
-Then use it in Claude Code by typing `/silevy-reply` followed by the content you want to reply to.
+Then use it in Claude Code by typing `/guijios-reply` followed by the content you want to reply to.
 
 ## Examples
 
 **GitHub issue reply:**
 ```
-/silevy-reply #72
+/guijios-reply #72
 ```
 
 **Reddit comment analysis:**
 ```
-/silevy-reply [paste reddit comments]
+/guijios-reply [paste reddit comments]
 ```
 
 **Draft a tweet reply:**
 ```
-/silevy-reply [paste tweet]
+/guijios-reply [paste tweet]
 ```
 
 ## License

@@ -1,5 +1,5 @@
 ---
-name: silevy-reply
+name: guijios-reply
 description: >
   跨平台回复/评论拟定。自动路由到对应平台规则（GitHub/Reddit/Twitter/HN/通用）。
   当用户提到以下场景时使用：回复 issue、回复 PR、github reply、帮我回、写个评论、

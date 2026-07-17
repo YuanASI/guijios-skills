@@ -1,6 +1,6 @@
-> Part of **[silevy-skills](../../README.md)** — Claude Code skills by Silevy. [Back to index ↑](../../README.md)
+> Part of **[guijios-skills](../../README.md)** — Claude Code skills by GuijiOS. [Back to index ↑](../../README.md)
 
-# Silevy Weekly Review
+# GuijiOS Weekly Review
 
 自动生成每周复盘周报的 Claude Skill，从 Claude Desktop（Cowork + Code tab）和 Claude Code 终端 CLI 的全部对话记录中提取本周所有工作内容，输出两份报告：
 
@@ -21,14 +21,14 @@
 使用 [Vercel Labs Skills CLI](https://github.com/vercel-labs/skills) 一键安装：
 
 ```bash
-npx skills add YuanASI/silevy-skills --skill silevy-weekly-review
+npx skills add YuanASI/guijios-skills --skill guijios-weekly-review
 ```
 
 ### 方式二：手动安装
 
 ```bash
-git clone https://github.com/YuanASI/silevy-skills.git
-ln -s "$(pwd)/silevy-skills/skills/silevy-weekly-review" ~/.claude/skills/silevy-weekly-review
+git clone https://github.com/YuanASI/guijios-skills.git
+ln -s "$(pwd)/guijios-skills/skills/guijios-weekly-review" ~/.claude/skills/guijios-weekly-review
 ```
 
 ## 使用
@@ -49,6 +49,12 @@ weekly review
 
 首次运行时会引导你完成简单配置（身份标签、对外周报格式、敏感信息规则），分类体系由 AI 从你的实际对话数据中自动推断。
 
+## 从旧名称迁移
+
+本 skill 曾使用 `GuijiOS-weekly-review` 和 `silevy-weekly-review` 名称。现在的唯一维护入口是 `guijios-weekly-review`。
+
+如果你已经使用过旧版，重新安装后可将旧 skill 目录中的 `config.json` 复制到 `~/.claude/skills/guijios-weekly-review/config.json`，保留原有的身份、分类和敏感信息配置。
+
 ## 配置
 
 配置文件 `config.json` 首次运行时自动生成（在 skill 安装目录下），包含以下可定制项：
@@ -66,7 +72,7 @@ weekly review
 ## 文件结构
 
 ```
-skills/silevy-weekly-review/
+skills/guijios-weekly-review/
 ├── SKILL.md                      # 主指令文件
 ├── README.md                     # 本文件
 ├── references/
