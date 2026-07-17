@@ -1,39 +1,47 @@
-# silevy-skills
+# guijios-skills
 
-> 🌐 **For international visitors:** This is a **Chinese-first** Claude Code skills monorepo by [Silevy (硅基杠杆)](https://github.com/JackChen-me). Most skills target Chinese content creation workflows; some `SKILL.md` files are Chinese-only. The repo layout, install commands, and trigger words below work the same regardless of language. Translation PRs are welcome but may take time to review — see [Contributions](#contributions).
+> 🌐 **For international visitors:** This is a **Chinese-first** Claude Code skills monorepo by [GuijiOS (硅基杠杆 OS)](https://github.com/JackChen-me). This repository was previously named `silevy-skills`. Most skills target Chinese content creation workflows; some `SKILL.md` files are Chinese-only. The repo layout, install commands, and trigger words below work the same regardless of language. Translation PRs are welcome but may take time to review — see [Contributions](#contributions).
 
-由 **Silevy（硅基杠杆）** 出品的 Claude Code skill 合集。最初是 `silevy-reply` 这一个 skill，现已扩展为面向中文内容创作者和 indie hacker 的系列工具。
+由 **GuijiOS（硅基杠杆 OS）** 出品的 Claude Code skill 合集。本仓库曾使用 `silevy-skills` 名称，现已统一回归 GuijiOS 品牌。
 
 ## Skills 索引
 
 | Skill | 用途 | 语言 |
 |---|---|---|
-| [**silevy-reply**](skills/silevy-reply/) | 跨平台回复拟稿（GitHub / Reddit / Twitter / HN），自带反 AI 痕迹规则 | 中文 + EN |
-| [**silevy-weekly-review**](skills/silevy-weekly-review/) | 自动采集 Cowork 和 Claude Code 对话，自动聚类，生成对内复盘 + 对外周记 | 中文 |
+| [**guijios-reply**](skills/guijios-reply/) | 跨平台回复拟稿（GitHub / Reddit / Twitter / HN），自带反 AI 痕迹规则 | 中文 + EN |
+| [**guijios-weekly-review**](skills/guijios-weekly-review/) | 自动采集 Cowork 和 Claude Code 对话，自动聚类，生成对内复盘 + 对外周记 | 中文 |
 
-后续会有更多 silevy-* skill 陆续加入，请关注本仓更新。
+后续会有更多 `guijios-*` skill 陆续加入，请关注本仓更新。
+
+## 名称迁移
+
+`GuijiOS-weekly-review` 曾短暂改名为 `silevy-weekly-review`，并迁入 `silevy-skills` monorepo。现在品牌与技术标识已统一回归 GuijiOS：
+
+- 唯一维护入口：`YuanASI/guijios-skills`
+- 当前 skill ID：`guijios-reply` 和 `guijios-weekly-review`
+- 旧的 `silevy-*` 名称只用于迁移说明，不再作为独立源码维护
 
 ## 安装
 
 ### 安装整个 monorepo
 
 ```bash
-npx skills add YuanASI/silevy-skills
+npx skills add YuanASI/guijios-skills
 ```
 
 ### 只装某一个 skill
 
 ```bash
-npx skills add YuanASI/silevy-skills --skill silevy-reply
-npx skills add YuanASI/silevy-skills --skill silevy-weekly-review
+npx skills add YuanASI/guijios-skills --skill guijios-reply
+npx skills add YuanASI/guijios-skills --skill guijios-weekly-review
 ```
 
 ### 手动安装
 
 ```bash
-git clone https://github.com/YuanASI/silevy-skills.git
-ln -s "$(pwd)/silevy-skills/skills/silevy-reply" ~/.claude/skills/silevy-reply
-ln -s "$(pwd)/silevy-skills/skills/silevy-weekly-review" ~/.claude/skills/silevy-weekly-review
+git clone https://github.com/YuanASI/guijios-skills.git
+ln -s "$(pwd)/guijios-skills/skills/guijios-reply" ~/.claude/skills/guijios-reply
+ln -s "$(pwd)/guijios-skills/skills/guijios-weekly-review" ~/.claude/skills/guijios-weekly-review
 ```
 
 支持 Claude Code、Codex、Cursor、GitHub Copilot、OpenCode 等所有兼容 [Vercel 的 skills CLI](https://github.com/vercel-labs/skills) 的 agent。

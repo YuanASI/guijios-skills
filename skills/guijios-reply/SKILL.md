@@ -1,5 +1,5 @@
 ---
-name: silevy-reply
+name: guijios-reply
 description: >
   Cross-platform reply and comment drafting. Auto-routes to platform-specific rules
   (GitHub/Reddit/Twitter/HN/general). Use when the user mentions: reply to issue,
